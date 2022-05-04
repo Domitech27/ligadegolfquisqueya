@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+     font-size: 16px;
+     color: #ffffff;
+ }
+ 
+ body {
+     background-color: #000000;
+ }
+ 
+ a {
+     color: #229954;
+     font-size: 100%;
+ }
+ 
+ a:hover {
+     color: #AFFF33;
+     text-decoration: none;
+ }
+ 
+ h1 {
+     color: #ffffff;
+     text-shadow: 0 5px 10px #000000;
+     width: 100%;
+     margin: 100px 50px;
+     font-size: 3em;
+ }
+ 
+ h2 {
+         text-shadow: 0 5px 10px #000000;
+ }
+ 
+ h3 {
+     text-align: center;
+ }
+ 
+ h6 {
+     font-size: 12px;
+ }
+ 
+ form {
+     text-align: left;
+     width: 100%;
+     padding: 10px;
+ }
+ 
+ form p {
+     display: table-row;
+     text-shadow: 0 5px 10px #000000;
+ }
+ 
+ label, input {
+     display: table-cell;
+     margin: 5px 0px;
+ }
+ 
+ input {
+     border-color: #AFFF33;
+     color: #000000;
+     box-shadow:0 5px 10px #000000;
+ }
+ 
+ input:focus {
+     outline-color: #AFFF33;
+ }
+ 
+ button {
+     color: #FFFFFF;
+     background-color: #229954;
+     border-radius: 5px;
+     border: 0px;
+     width: 100%;
+     padding: 5px;
+     font-size: 20px;
+     text-shadow: 0 5px 10px #000000;
+     box-shadow: 0 5px 10px #000000;
+     margin-top: 15px;
+ }
+ 
+ button:hover {
+     background-color: #AFFF33;
+ }
+ 
+ .right {
+     float: right;
+ }
+ 
+ .logo {
+     background-color: #000000;
+     padding: 10px;
+     position: relative;
+     max-height: 400px;
+     min-height: 100px;
+     display: flex;
+     flex-direction: row;
+    align-items: center
+ }
+ 
+ .logo img {
+     max-width: 45%;
+     margin: 5px 10px;
+ }
+ 
+ .banner-img {
+     background: url(https://res.cloudinary.com/nicolegrima/image/upload/v1486940858/Golf2_kng116.jpg) center no-repeat;
+     background-size: cover;
+     display: flex;
+     text-align: center;
+ }
+ 
+ .text {
+     margin: 25px 30px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .text img {
+     max-width: 90%;
+     margin: 25px 0px;
+     border-radius: 5px;
+ }
+ 
+ .entry {
+     border: 1px solid #ffffff;
+     border-radius: 5px;
+     padding: 10px;
+     text-align: center;	
+     margin: 25px 30px;
+     height: 300px;
+     width: 300px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .message {
+     font-size: 1.5em;
+     margin: 0px 25px;
+     color: #ffffff;
+     text-shadow: 0 5px 10px #000000;
+ }
+ 
+ .contest-section {
+     background: url(https://res.cloudinary.com/nicolegrima/image/upload/v1487013621/Golf1SMALL_hhu5gl.jpg) bottom no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ /* MEDIA QUERIES */
+ 
+ [class*="col-"] {
+      width: 100%;	
+ } /* Default */
+ 
+ @media only screen and (max-width: 599px) {
+     .col-xs-3 {width: 25%;}
+     .col-xs-6 {width: 50%;}
+     .col-xs-9 {width: 75%;}
+ } /* end mobile query */
+ 
+ @media only screen and (min-width: 600px) {
+ /* For tablets: */
+ .col-m-1 {width: 8.33%;}
+ .col-m-2 {width: 16.66%;}
+ .col-m-3 {width: 25%;}
+ .col-m-4 {width: 33.33%;}
+ .col-m-5 {width: 41.66%;}
+ .col-m-6 {width: 50%;}
+ .col-m-7 {width: 58.33%;}
+ .col-m-8 {width: 66.66%;}
+ .col-m-9 {width: 75%;}
+ .col-m-10 {width: 83.33%;}
+ .col-m-11 {width: 91.66%;}
+ .col-m-12 {width: 100%;}
+     
+ .banner-img h1 {
+     margin: 200px 0px;
+     font-size: 4.5em;
+ }	
+     
+ .contest-section {
+     display: flex;
+     flex-direction: row;
+ }	
+ 
+ .floating-img {
+     display: none;
+     visibility: hidden;
+     }	
+     
+ .entry {
+     margin: 45px 50px;
+     }		
+ } /* end tablet query */
+ 
+ @media only screen and (min-width: 800px) {
+ /* For tablet landscape: */
+     
+ .banner-img h1 {
+     margin: 200px 0px;
+     font-size: 4.5em;
+ }
+     
+ .text img {
+     width: 640px;
+     height: 427px;	
+     margin-left: auto;
+     margin-right: auto;
+  }	
+ }	/* end tablet landscape query */
+ 
+ @media only screen and (min-width: 1000px) {
+ /* For desktop: */
+ 
+ .logo img {
+     max-width: 25%;
+ }	
+     
+ .banner-img h1 {
+     margin: 400px 0px;
+     font-size: 5.5em;
+ }
+     
+ .text {
+     margin: 25px 100px;
+ }	
+ 
+ h3 {
+     margin-right: 100px;
+     margin-left: 100px;
+     }	
+ 
+ .entry {
+     margin: 45px 110px;
+     }		
+     
+ }	/* end desktop query */
+     
+ 

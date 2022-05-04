@@ -1,0 +1,458 @@
+
+/* This is the link for the introduction video: " https://youtu.be/1R8ZFolUsTw "*/
+
+
+html{
+    scroll-behavior: smooth; /* When clicked on the page goes smoothly instead of straight jump.*/
+  }
+  
+  body {
+    background-image: url("https://images.unsplash.com/photo-1500932334442-8761ee4810a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+  }
+  
+  #golf{
+    color: #FFFFFF;
+    font-size: 54px;
+    text-align: center;
+    font-family: calibri;
+    letter-spacing: 40px;
+  }
+  
+  #home-the-golf-club{
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  #diamond-shape {
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-bottom-color: #2E8B57;
+      position: relative;
+      top: -50px;
+      left: 48%;
+      }
+   
+  #diamond-shape:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top-color: #FFFFFF;
+      }
+  
+  #slogan{
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;/* for Safari */
+    top: 0;
+  
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-indent: 20px;
+    font-family: copperplate;
+  }
+  
+  li a:hover {
+    opacity: 0.7;
+  }
+    
+  .active {
+    background-color: #ADD8E6;
+  }
+  
+  .joinus-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #2E8B57;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+  }
+  
+  .joinus-button:hover {background-color: #008000}
+  
+  .joinus-button:active {
+    background-color: #556B2F;
+  }
+  
+  
+  
+  
+  .second{
+  
+    background-color: #F5F5F5;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+  }
+  #all-about-us{
+    text-indent: 100px;
+    font-size: 36px;
+    font-family: Garamond;
+    color: #000000;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+  
+  .about-explain{
+  
+    font-size: 24px;
+    font-family: "Courier New";
+    padding: 50px;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  
+  #about-pic{
+    border-radius: 20px;
+    float: right;
+    opacity: 0.8;
+  }
+  
+  #clickAndMore {
+    display: none; /* with this the page is opening with 'read more'*/
+  }
+  
+  #moreLessButton{
+    font-family: "Courier New";
+    letter-spacing: 3px;
+  }
+  
+  
+  
+  .third{
+  
+    background-image: url(https://images.unsplash.com/photo-1595827432953-7161e19e303e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGdvbGZlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .membership-options {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,1), 0 6px 6px rgba(0,0,0,1);
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 5);
+    margin: 20px;
+    border: 1px solid #D3D3D3;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(46,139,87,1), 10px 6px 6px rgba(46,139,87,1);
+    background-color: #F5F5F5;
+    transition: transform 0.5s; /* Giving smoothly effect*/
+  }
+  
+  .product > .level {
+    background-color: #D3D3D3;
+    color: #000000;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+    color: #006400;
+  }
+  
+  .product > ol {
+    margin: 15px 0;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #2E8B57;
+    font-weight: 400;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .product > button:hover {
+    background-color: #006400;
+    transition: background-color .5s;
+    color: #FFFFFF;
+  }
+  
+  .product:hover {
+  transform: scale(1.2);
+  }
+  
+  
+  @media (max-width: 700px) {
+    #membership-options{
+    flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  #fourth{
+  
+    background-image: url(https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGdvbGZ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #slogan3{
+  
+    font-size: 54px;
+    font-family: "Courier New";
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  
+  .newsletter-container {
+    padding: 10px;
+    letter-spacing: 2px;
+    font-family: "Courier new";
+    font-size: 24px;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 30%;
+    padding: 12px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid;
+    box-sizing: border-box;  
+    border-radius: 30px;
+  }
+  
+  input[type=submit] {
+    background-color: #008000;
+    color: #FFFFFF;
+    border: none;
+    width: 10%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #000000;
+  }
+  
+  
+  #we-love-golf{
+     text-align:middle;
+     font-size: 48px;
+     font-family: monospace;
+     letter-spacing: 3px;
+     color: #008000;
+  }
+  
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  
+  .title {
+    color: #808080;
+  }
+  
+  section {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+  
+  body{
+    background-color: #556B2F;
+  }
+  
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 50px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #006430;
+  }
+  
+  .contact-button {
+    border: none;
+    outline: 10;
+    display: inline-block;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #008000;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  
+  .contact-button:hover {
+    background-color: #556B2F;
+    color: #000000;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+    background-color: #008000;
+  }
+  
+  .fa-facebook{
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  .fa-twitter {
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  .fa-google {
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  .fa-linkedin {
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  .fa-youtube {
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  .fa-instagram {
+    background: #D3D3D3;
+    color: #FFFFFF;
+  }
+  
+  
+  
+  footer {
+    margin-top: 30px;
+    background-color: #A9A9A9;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  .copy-rights {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #000000;
+  }
+  
