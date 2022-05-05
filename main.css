@@ -28,7 +28,7 @@ html{
     font-family: monospace;
   }
   
-  #diamond-shape {
+  #flag {
       width: 0;
       height: 0;
       border: 30px solid transparent;
@@ -38,7 +38,7 @@ html{
       left: 48%;
       }
    
-  #diamond-shape:after {
+  #flag:after {
       content: '';
       position: absolute;
       left: -50px;
@@ -455,4 +455,17 @@ html{
     font-size: 12px;
     color: #000000;
   }
+
+  .header img {
+    float: left;
+    width: 100px;
+    height: 85px;
+    background: rgb(243, 240, 240);
+  }
   
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
