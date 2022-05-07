@@ -28,7 +28,7 @@ html{
     font-family: monospace;
   }
   
-  #flag {
+  #diamond-shape {
       width: 0;
       height: 0;
       border: 30px solid transparent;
@@ -38,7 +38,7 @@ html{
       left: 48%;
       }
    
-  #flag:after {
+  #diamond-shape:after {
       content: '';
       position: absolute;
       left: -50px;
